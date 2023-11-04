@@ -1,0 +1,147 @@
+.use_case_container{
+    background: #F2F5F6;
+    min-height: 800px;
+    color: black;
+}
+.usecase_upper_section{
+    padding-top: 100px;
+    max-width: 490px;
+    margin: auto;
+    text-align: center;
+}
+.usecase_heading{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.2;
+    color: #0C0D0D;
+    padding: 15px 0;
+}
+.usecase_desc{
+    color: #31353b;
+    font-weight: 400;
+    line-height: 20px;
+}
+.usecase_img_container{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.usecase_img, img{
+    height: 359px;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.usecase_img img:hover{
+    transform: scale(1.06);
+    transition: all 1s;
+    cursor: pointer;
+}
+.usecase_btn{
+    text-align: center;
+}
+.usecase_btn button{
+    background: #4868FF;
+    color: white;
+    font-size: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 18px;
+    transition: all .5s;
+    margin-bottom: 50px;
+}
+.usecase_btn button:hover{
+    background: #393838;
+    cursor: pointer;
+}
+.usecase_btn .fa-greater-than{
+    margin-left: 10px;
+}
+/********************* media queries **************************************/
+
+@media screen and (max-width : 1400px) {
+    .usecase_img_container{
+        width: 80%;
+    }
+    .usecase_img, img{
+        height: 359px;
+        width: 235px;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .usecase_heading{
+        font-size: 37px;
+    }
+    .usecase_img_container{
+        width: 80%;
+    }
+    .usecase_img, img{
+        height: 300px;
+        width: 200px;
+    }
+}
+@media screen and (max-width : 1024px) {
+    .usecase_heading{
+        font-size: 35px;
+        line-height: 1.15;
+        padding: 12px 0;
+    }
+    .usecase_img_container{
+        width: 80%;
+    }
+    .usecase_img, img{
+        height: 300px;
+        width: 200px;
+    }
+}
+@media screen and (min-width : 868px ) and ( max-width : 1024px) {
+    .usecase_img_container{
+        width: 90%;
+    }
+    .usecase_img, img{
+        height: 280px;
+        width: 190px;
+    }
+}
+@media screen and (min-width : 768px ) and ( max-width : 868px) {
+    .usecase_img_container{
+        width: 95%;
+    }
+    .usecase_img, img{
+        height: 250px;
+        width: 170px;
+    }
+}
+@media screen and (max-width : 768px ) {
+    .usecase_img_container{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .usecase_img, img{
+        height: 700px;
+        width: 500px;
+    }
+}
+@media screen and (max-width : 541px ) {
+    .usecase_img_container{
+        gap: 50px;
+    }
+    .usecase_img, img{
+        height: 550px;
+        width: 400px;
+    }
+}
+@media screen and (max-width : 425px ) {
+    .usecase_img_container{
+        gap: 40px;
+    }
+    .usecase_img, img{
+        height: 450px;
+        width: 325px;
+    }
+}

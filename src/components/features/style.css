@@ -1,0 +1,121 @@
+.features_container {
+    background: #F2F5F6;
+    min-height: 700px;
+    color: black;
+}
+
+.features_upper_section {
+    padding-top: 100px;
+    max-width: 490px;
+    margin: auto;
+    text-align: center;
+}
+
+.features_heading {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.2;
+    color: #0C0D0D;
+    padding: 15px 0;
+}
+.features_desc {
+    color: #31353b;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.features_main_section {
+    display: grid;
+    grid-gap: 15px 15px;
+    grid-template-columns: auto auto auto;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 25px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    width: 80%;
+    min-height: 300px;
+    border-radius: 15px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.details_heading {
+    font-weight: 700;
+    font-size: 26px;
+    min-height: 15%;
+    color: #32363C;
+}
+
+.details_description {
+    min-height: 50%;
+    color: #c9bebe;
+    line-height: 1.5;
+}
+
+.read_more {
+    min-height: 20%;
+    font-size: 21px;
+    color: rgb(72, 72, 194);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.read_more i {
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.read_more:hover i {
+    padding-left: 7px;
+    transition: all .5s;
+
+}
+
+/********************* media queries ***************************************/
+
+@media screen and (max-width:1200px) {
+    .details_heading {
+        font-size: 24px;
+    }
+    .details_description {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .details_description {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:800px) {
+    .details_description {
+        font-size: 14px;
+    }
+    .read_more {
+        min-height: 10%;
+    }
+}
+@media screen and (max-width:800px) {
+    .features_main_section {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:550px) {
+    .features_main_section {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: auto;
+    }
+}
